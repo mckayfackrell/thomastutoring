@@ -20,7 +20,7 @@ const AboutMe = () => {
             ></div>
           </div>
           <div className="flex flex-col justify-center">
-            <h1 className="text-4xl sm:text-7xl font-bold text-black">
+            <h1 className="text-4xl sm:text-7xl font-bold text-[#1d7442]">
               About Me
             </h1>
             <p className="py-4 max-w-[700px] text-1xl lg:text-2xl">

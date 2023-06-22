@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -52,14 +54,10 @@ const Contact = () => {
     : "Error";
 
   return (
-    <div
-      name="contact"
-      id="contact"
-      className="w-full h-screen flex justify-center items-center p-4"
-    >
+    <div className="w-full h-screen flex flex-col justify-center items-center p-4">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col max-w-[600px] w-full bg-white rounded-lg shadow-lg p-8"
+        className="flex flex-col max-w-[600px] w-full bg-white rounded-lg shadow-lg p-8 mb-4"
       >
         <div className="pb-8">
           <h1 className="text-4xl md:text-5xl font-bold border-b-4 border-[#1d7442] text-[#1d7442] mb-4">
@@ -104,8 +102,19 @@ const Contact = () => {
           {submitting ? "Submitting..." : buttonText}
         </button>
       </form>
+
+      <div className="mt-10 flex flex-col items-center">
+        <p className="mb-2">Click the button below to apply for tutoring</p>
+        <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
+          <button className="text-black group border-black border-2 px-6 py-3 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
+            Apply for Tutoring
+            <span>
+              <HiArrowNarrowRight className="ml-3" />
+            </span>
+          </button>
+        </Link>
+      </div>
     </div>
-    
   );
 };
 
