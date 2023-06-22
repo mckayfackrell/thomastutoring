@@ -24,7 +24,7 @@ const Contact = () => {
     setSubmitting(true);
     setSubmitSuccess(false);
 
-    fetch("https://getform.io/f/0be4ed6d-4ad9-4d16-b3ff-664ee3656bba", {
+    fetch("https://getform.io/f/92b00edb-a545-4a42-9c7a-6bf6f5b110ef", {
       method: "POST",
       body: new FormData(event.target),
     })
@@ -105,6 +105,7 @@ const Contact = () => {
         </button>
       </form>
     </div>
+    
   );
 };
 

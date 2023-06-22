@@ -40,7 +40,9 @@ const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li className="hover:underline md:text-xl">
-          <Link to="/form">Form</Link>
+          <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
+            Apply for Tutoring
+          </Link>
         </li>
       </ul>
 
@@ -97,12 +99,12 @@ const Navbar = () => {
         <li className="py-3 text-3xl md:text-4xl hover:underline">
           <Link
             onClick={handleClick}
-            to="/form"
+            to="https://forms.gle/jiJgreaXWRS3gjac8"
             smooth={true}
             duration={500}
             offset={-80}
           >
-            Form
+            Apply for Tutoring
           </Link>
         </li>
       </ul>

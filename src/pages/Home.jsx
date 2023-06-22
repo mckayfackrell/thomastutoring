@@ -17,15 +17,27 @@ const Home = () => {
             will guide you through the exam preparation process, helping you
             master the content and strategies necessary for success.
           </p>
-          <div>
-            <Link to="/aboutme">
-              <button className="text-black group border-black border-2 px-6 py-3 my-2 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
-                Learn More
-                <span>
-                  <HiArrowNarrowRight className="ml-3" />
-                </span>
-              </button>
-            </Link>
+          <div className="flex space-x-4">
+            <div>
+              <Link to="/aboutme">
+                <button className="text-black group border-black border-2 px-6 py-3 my-2 mr-2 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
+                  Learn More
+                  <span>
+                    <HiArrowNarrowRight className="ml-3" />
+                  </span>
+                </button>
+              </Link>
+            </div>
+            <div>
+              <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
+                <button className="text-black group border-black border-2 px-6 py-3 my-2 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
+                  Apply for Tutoring
+                  <span>
+                    <HiArrowNarrowRight className="ml-3" />
+                  </span>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
