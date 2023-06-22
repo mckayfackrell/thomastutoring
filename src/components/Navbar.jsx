@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/logo.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#546f7a] text-black">
       {/* logo */}
       <div>
-        <Link to="home" smooth={true} duration={500}>
+        <Link to="/">
           <img
             className="hover:cursor-pointer"
             src={Logo}
@@ -25,29 +25,22 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex">
         <li className="hover:underline md:text-xl">
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li className="hover:underline md:text-xl">
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
+          <Link to="/aboutme">About Me</Link>
         </li>
         <li className="hover:underline md:text-xl">
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
+          <Link to="/resources">Resources</Link>
         </li>
         <li className="hover:underline md:text-xl">
-          <Link to="projects" smooth={true} duration={500}>
-            Resources
-          </Link>
+          <Link to="/faq">FAQ</Link>
         </li>
         <li className="hover:underline md:text-xl">
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li className="hover:underline md:text-xl">
+          <Link to="/form">Form</Link>
         </li>
       </ul>
 

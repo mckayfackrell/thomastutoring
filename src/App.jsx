@@ -1,20 +1,27 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Faq from "./pages/Faq";
+import AboutMe from "./pages/AboutMe";
+import Form from "./pages/Form";
+import Resources from "./pages/Resources";
+import Reviews from "./pages/Reviews";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/reviews" element={<Reviews />} />
+      </Routes>
+    </Router>
   );
 }
 
