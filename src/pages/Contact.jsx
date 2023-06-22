@@ -55,24 +55,22 @@ const Contact = () => {
     <div
       name="contact"
       id="contact"
-      className="w-full h-screen bg-[#7b904b] flex justify-center items-center p-4"
+      className="w-full h-screen flex justify-center items-center p-4"
     >
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col max-w-[600px] w-full"
+        className="flex flex-col max-w-[600px] w-full bg-white rounded-lg shadow-lg p-8"
       >
         <div className="pb-8">
-          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-black text-white">
+          <h1 className="text-4xl md:text-5xl font-bold border-b-4 border-[#1d7442] text-[#1d7442] mb-4">
             Contact
-          </p>
-          <p className="text-black py-4 md:text-xl lg:text-2xl">
-            {" "}
-            Fill out the form here (URL) Submit the form below to get in contact
-            with me
+          </h1>
+          <p className="text-black text-lg">
+            Fill out the form below to get in contact with me.
           </p>
         </div>
         <input
-          className="bg-white p-2"
+          className="bg-gray-100 p-3 mb-4 rounded-lg"
           type="text"
           placeholder="Name"
           name="name"
@@ -81,7 +79,7 @@ const Contact = () => {
           required
         />
         <input
-          className="my-4 p-2 bg-white"
+          className="bg-gray-100 p-3 mb-4 rounded-lg"
           type="email"
           placeholder="Email"
           name="email"
@@ -90,16 +88,16 @@ const Contact = () => {
           required
         />
         <textarea
-          className="bg-white p-2"
+          className="bg-gray-100 p-3 mb-4 rounded-lg"
           name="message"
-          rows="10"
+          rows="6"
           placeholder="Message"
           value={message}
           onChange={handleMessageChange}
           required
         ></textarea>
         <button
-          className="text-black group bg-[#5f6f3a] border-[#5f6f3a] border-2 px-6 py-3 hover:border-black my-8 mx-auto flex items-center"
+          className="px-6 py-3 rounded-lg font-medium transition duration-300 hover:bg-[#34ae6b] bg-[#229354]"
           type="submit"
           disabled={submitting}
         >

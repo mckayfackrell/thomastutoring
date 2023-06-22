@@ -59,8 +59,9 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center transition-opacity duration-500"
         }
+        style={{ opacity: nav ? 1 : 0 }}
       >
         <li className="py-3 text-3xl md:text-4xl hover:underline">
           <Link onClick={handleClick} to="/">
@@ -107,8 +108,10 @@ const Navbar = () => {
       </ul>
 
       {/* footer */}
-      <footer class="fixed bottom-0 left-0 z-20 w-full p-2 bg-white">
-        <span class="text-black sm:text-center">© 2023 Thomas Fackrell</span>
+      <footer className="fixed bottom-0 left-0 z-20 w-full p-2 bg-white">
+        <span className="text-black sm:text-center">
+          © 2023 Thomas Fackrell
+        </span>
       </footer>
     </div>
   );
