@@ -1,43 +1,41 @@
 import React from "react";
+import profile from "../assets/profile.jpeg";
 
-const About = () => {
+const AboutMe = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#41565f]">
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4">
-            <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-black text-[#EBE9E9]">
-              About
-            </p>
+    <div className="w-full h-screen bg-[#FFFFFF]">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="flex justify-center items-center">
+            <div
+              className="profile-image"
+              style={{
+                backgroundImage: `url(${profile})`,
+                backgroundSize: `cover`,
+                backgroundPosition: `center`,
+                width: `300px`,
+                height: `300px`,
+                boxShadow: `0px 0px 10px rgba(0, 0, 0, 0.5)`,
+              }}
+            ></div>
           </div>
-          <div></div>
-        </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-xl md:text-4xl font-bold text-[#546f7a]">
-            <p>I'm McKay, nice to meet you. Please take a look around.</p>
-          </div>
-          <div>
-            <p className="md:text-xl lg:text-2xl">
-              I have experience in developing both front-end and back-end of
-              websites using HTML, CSS, JavaScript, Bootstrap, React, Node.js,
-              MERN, MySQL, and GraphQL. I enjoy learning new technologies and
-              web development best practices. I am a collaborative team player
-              with strong communication skills and attention to detail.
+          <div className="flex flex-col justify-center">
+            <h1 className="text-4xl sm:text-7xl font-bold text-black">
+              About Me
+            </h1>
+            <p className="py-4 max-w-[700px] text-1xl lg:text-2xl">
+              Hi, I'm Thomas, a highly experienced ACT tutor with a passion for
+              helping students reach their full potential. With a proven track
+              record of success, I am dedicated to providing personalized
+              tutoring sessions that cater to each student's unique learning
+              style and needs.
             </p>
-            <p className="md:text-xl lg:text-2xl mt-8">
-              Take a look at my certificate:
-              <a
-                href="https://www.credly.com/earner/earned/badge/05e9f0bb-d0b5-48e4-8ef4-c50f48a71137"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="mt-4 hover:scale-110 transition-all duration-300"
-                  src="https://user-images.githubusercontent.com/110206514/228991224-e78aaad5-a2de-4f75-a8df-e0b815814b02.png"
-                  alt="University of Utah Badge"
-                  width="150"
-                />
-              </a>
+            <p className="py-4 max-w-[700px] text-1xl lg:text-2xl">
+              I graduated from Brigham Young University (BYU) with a Bachelor's
+              degree in Education, specializing in test preparation strategies
+              and techniques, specifically for the ACT exam. I have since worked
+              with numerous students, helping them improve their scores and gain
+              admission to their dream colleges and universities.
             </p>
           </div>
         </div>
@@ -46,4 +44,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMe;
