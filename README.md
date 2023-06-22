@@ -3,9 +3,9 @@
 Do you need tutoring help for the ACT? This website gives the user a breakdown of how Thomas can help them prepare for the ACT successfully. The website gives reviews, goals, and a contact form to setup a time for Thomas to help start the tutoring process. 
 
 ## Images
-| Homepage | Contact | Reviews |
+| Homepage | Resources | Contact |
 |---------|---------|---------|
-| image 1 | image 2 |image 3 |
+| home | image 2 |image 3 |
 
 ## Usage
 Anyone can access the website via the url: URL
