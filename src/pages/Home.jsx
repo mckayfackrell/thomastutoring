@@ -31,7 +31,7 @@ const Home = () => {
             <div>
               <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
                 <button className="text-black group border-black border-2 px-6 py-3 my-2 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
-                  Apply for Tutoring
+                Request ACT Tutoring
                   <span>
                     <HiArrowNarrowRight className="ml-3" />
                   </span>

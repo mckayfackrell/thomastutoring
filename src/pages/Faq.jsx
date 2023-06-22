@@ -5,7 +5,7 @@ const FAQ = () => {
     {
       question: "What is the cost of your tutoring services?",
       answer:
-        "Please contact me directly for information about the cost of my tutoring services.",
+        "This depends on the tutoring subject. Reach out to me through the contact form and we can find what works best for your family.",
     },
     {
       question: "How long are the tutoring sessions?",

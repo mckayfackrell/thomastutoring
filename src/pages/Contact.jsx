@@ -64,7 +64,7 @@ const Contact = () => {
             Contact
           </h1>
           <p className="text-black text-lg">
-            Fill out the form below to get in contact with me.
+            Do you have any questions or special tutoring requests?
           </p>
         </div>
         <input
@@ -104,10 +104,10 @@ const Contact = () => {
       </form>
 
       <div className="mt-10 flex flex-col items-center">
-        <p className="mb-2">Click the button below to apply for tutoring</p>
+        <p className="mb-2">Looking for ACT test prep?</p>
         <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
           <button className="text-black group border-black border-2 px-6 py-3 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
-            Apply for Tutoring
+            Request ACT Tutoring
             <span>
               <HiArrowNarrowRight className="ml-3" />
             </span>

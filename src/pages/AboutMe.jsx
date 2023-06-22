@@ -14,6 +14,7 @@ const AboutMe = () => {
                 backgroundSize: `cover`,
                 backgroundPosition: `center`,
                 width: `300px`,
+                borderRadius: `50%`,
                 height: `300px`,
                 boxShadow: `0px 0px 10px rgba(0, 0, 0, 0.5)`,
               }}
