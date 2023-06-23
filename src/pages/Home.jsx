@@ -1,12 +1,17 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import tutor from "../assets/tutor.png";
+import classroom from "../assets/classroom.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-white">
       <div className="max-w-7xl mx-auto px-8 flex flex-col justify-center h-full">
+        <div
+          className="banner-image bg-cover bg-center bg-no-repeat w-full sm:w-auto sm:h-64 md:h-80 lg:h-96"
+          style={{ backgroundImage: `url(${classroom})` }}
+        ></div>
         <div
           className="profile-image bg-contain bg-center bg-no-repeat w-full sm:w-auto sm:h-64 md:h-80 lg:h-96"
           style={{ backgroundImage: `url(${tutor})` }}
@@ -31,7 +36,7 @@ const Home = () => {
             <div>
               <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
                 <button className="text-black group border-black border-2 px-6 py-3 my-2 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
-                Request ACT Tutoring
+                  Request ACT Tutoring
                   <span>
                     <HiArrowNarrowRight className="ml-3" />
                   </span>
