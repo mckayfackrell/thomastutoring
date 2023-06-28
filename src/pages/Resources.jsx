@@ -20,8 +20,8 @@ const StudentResources = () => {
   ];
 
   return (
-    <div className="w-full h-screen bg-[#FFFFFF]">
-      <div className="max-w-[700px] mx-auto px-8 flex flex-col justify-center h-full">
+    <div className="w-full h-screen bg-gray-200">
+      <div className="max-w-7xl mx-auto px-8 flex flex-col justify-center h-full">
         <h1 className="text-4xl sm:text-5xl font-bold text-[#1d7442] my-8">
           Student Resources
         </h1>

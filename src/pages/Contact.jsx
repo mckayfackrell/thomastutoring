@@ -54,10 +54,10 @@ const Contact = () => {
     : "Error";
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center p-4">
+    <div className="w-full h-screen flex flex-col justify-center items-center p-4 bg-gray-200">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col max-w-[600px] w-full bg-white rounded-lg shadow-lg p-8 mb-4"
+        className="flex flex-col max-w-[600px] w-full bg-white rounded-lg shadow-lg p-8 mb-4 mt-20"
       >
         <div className="pb-8">
           <h1 className="text-4xl md:text-5xl font-bold border-b-4 border-[#1d7442] text-[#1d7442] mb-4">
@@ -95,7 +95,7 @@ const Contact = () => {
           required
         ></textarea>
         <button
-          className="px-6 py-3 rounded-lg font-medium transition duration-300 hover:bg-[#34ae6b] bg-[#229354]"
+          className="px-6 py-3 rounded-lg font-medium transition duration-300 hover:bg-[#34ae6b] bg-[#229354] text-white"
           type="submit"
           disabled={submitting}
         >
@@ -106,7 +106,10 @@ const Contact = () => {
       <div className="mt-10 flex flex-col items-center">
         <p className="mb-2">Looking for ACT test prep?</p>
         <Link to="https://forms.gle/jiJgreaXWRS3gjac8">
-          <button className="text-black group border-black border-2 px-6 py-3 flex items-center hover:border-black hover:transform hover:scale-105 transition duration-300">
+        <button
+            id="request"
+            className="px-6 py-3 rounded-lg bg-[#229354] text-white border-[#229354] border-2 flex items-center hover:bg-[#34ae6b] hover:border-[#34ae6b] hover:transform hover:scale-105 transition duration-300"
+          >
             Request ACT Tutoring
             <span>
               <HiArrowNarrowRight className="ml-3" />
